@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <center><input type="search" name="" id="" placeholder="Search"></center>
+    <form action="" method="post">
+        <fieldset>
+            <legend align="center">Registration</legend>
+            
+            <fieldset>
+                <legend align="center">Personal Info</legend>
+                <label for="firstname">First Name:</label>
+                <input type="text" name="firstname" id="firstname" placeholder="First Name" required><br><br>
+
+                <label for="lastname">Last Name:</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Last Name" required><br><br>
+
+                <label for="age">Age:</label>
+                <input type="number" name="age" id="age" min="15" max="20" placeholder="15-20" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="pu.edu.np" required><br><br>
+
+                <label for="phone_code">Phone:</label>
+                <select name="phone_code" id="phone_code">
+                    <option value="+977">+977</option>
+                </select>
+                <input type="tel" name="phone_number" id="phone_number" placeholder="98040320430" required><br><br>
+
+                <label for="address">Address:</label>
+                <select name="address" id="address">
+                    <option value="KTM">KTM</option>
+                </select><br><br>
+
+                <label>Gender:</label>
+                <input type="radio" name="gender" value="male" id="male"> <label for="male">Male</label>
+                <input type="radio" name="gender" value="female" id="female"> <label for="female">Female</label>
+                <input type="radio" name="gender" value="other" id="other"> <label for="other">Other</label><br><br>
+            </fieldset>
+
+            <br><br>
+            <fieldset>
+                <legend align="center">Credential</legend>
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username" required><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" required><br><br>
+            </fieldset>
+
+            <br><br>
+            <fieldset>
+                <legend align="center">Interest</legend>
+                <label>Hobby:</label>
+                <input type="checkbox" name="hobby" value="cricket" id="cricket"> <label for="cricket">Cricket</label>
+                <input type="checkbox" name="hobby" value="music" id="music"> <label for="music">Music</label>
+                <input type="checkbox" name="hobby" value="football" id="football"> <label for="football">Football</label><br><br>
+            </fieldset>
+
+            <br><br>
+            <label>Faculty:</label>
+            <input type="checkbox" name="faculty" value="it" id="it"> <label for="it">IT</label>
+            <input type="checkbox" name="faculty" value="bca" id="bca"> <label for="bca">BCA</label>
+            <input type="checkbox" name="faculty" value="engineering" id="engineering"> <label for="engineering">Engineering</label><br><br>
+
+            <label for="university">University:</label>
+            <input type="text" name="university" id="university" value="Pokhara University" readonly><br><br>
+
+            <label for="photo">Photo:</label>
+            <input type="file" name="photo" id="photo"><br><br>
+
+            <label for="document">Document:</label>
+            <input type="file" name="document" id="document"><br><br>
+
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" placeholder="Type your message here"></textarea><br><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+            <button>Ok</button>
+        </fieldset>
+    </form>
+</body>
+</html>
