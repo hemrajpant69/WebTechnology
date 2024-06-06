@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#contentDiv {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    width: 300px;
+    border: 2px solid black;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+#P1 {
+    position: relative;
+    font-family: Arial, sans-serif;
+    color: green;
+    margin-bottom: 20px;
+}
+
+#P2 {
+    position: absolute;
+    top: 50px; /* Adjusted to be relative to the container */
+    left: 200px; /* Adjusted to avoid overlap */
+    font-family: Arial, sans-serif;
+}

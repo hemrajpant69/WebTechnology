@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-letter{
+            color: pink;
+            font-size: 50px;
+        }
+        ::selection{
+            background-color: pink;
+        }
+        .nice{
+            color: rgb(2, 103, 25);
+        }
+
+        p::after{
+            content: url(hemraj.jpg);
+        }
+        p::before{
+            content: url(social.jpeg);
+        }
+    </style>
+</head>
+<nav>
+    <ul class="nice">
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact us</li>
+        <li>Logout</li>
+    </ul>
+</nav>
+<body>
+    <p>This is Paragraph</p>    
+</body>
+</html>
