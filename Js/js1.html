@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+</head>
+<body>
+
+    <div>
+        <p id="a">
+            Hello Guys 
+        </p>
+        <button onclick="ab()">Click Here</button>
+    </div>
+    <div>
+        <p id="date">
+            Today's Date: <br>
+            <button onclick="d()"> Show date </button>
+        </p>
+    </div>
+    
+</body>
+<script>
+    'use strict';
+
+    function ab() {
+        document.getElementById('a').innerHTML = 'Bye Bye';
+        document.getElementById('a').style.color = 'red';
+    }
+
+    function d() {
+        document.getElementById('date').innerHTML = `Today's Date: ${new Date().toDateString()}`;
+    }
+</script>
+</html>

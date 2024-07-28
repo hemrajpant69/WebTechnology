@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: red;
+            font-size: 20px; /* Reduced size for better usability */
+        }
+    </style>
+</head>
+<body>
+    <form action="welcome.html" onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+        <p id="NameErr"></p>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email">
+        <p id="EmailErr"></p>
+        
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        document.getElementById('name').addEventListener('input', validateName);
+        document.getElementById('email').addEventListener('input', validateEmail);
+
+        function validateName() {
+            let name = document.getElementById("name").value;
+            if (name === "" || name == null) {
+                document.getElementById("NameErr").innerText = "Please enter a name";
+                return false;
+            } else if (name.length < 7) {
+                document.getElementById("NameErr").innerText = "Name size is too small";
+                return false;
+            } else {
+                document.getElementById("NameErr").innerText = "";
+                return true;
+            }
+        }
+
+        function validateEmail() {
+            let email = document.getElementById("email").value;
+            let emailpat = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if (!emailpat.test(email)) {
+                document.getElementById("EmailErr").innerText = "Please enter a valid email";
+                return false;
+            } else {
+                document.getElementById("EmailErr").innerText = "";
+                return true;
+            }
+        }
+
+        function validateForm() {
+            let validName = validateName();
+            let validEmail = validateEmail();
+            return validName && validEmail;
+        }
+    </script>
+</body>
+</html>

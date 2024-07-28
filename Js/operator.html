@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript </title>
+</head>
+<body>
+    <h1>JavaScript</h1>
+    <p>Enter two numbers:</p>
+    <input type="number" id="num1" placeholder="Enter first number">
+    <input type="number" id="num2" placeholder="Enter second number">
+    <button onclick="calculate()">Calculate</button>
+
+    <p id="results"></p>
+
+    <script>
+        'use strict';
+
+        function calculate() {
+            // Get the values from the input fields
+            let num1 = parseFloat(document.getElementById('num1').value);
+            let num2 = parseFloat(document.getElementById('num2').value);
+
+            // Perform calculations
+            let sum = num1 + num2;
+            let division = num1 / num2;
+            let modulus = num1 % num2;
+            let power = Math.pow(num1, num2);
+            let multiplication = num1 * num2;
+
+            // Display the results
+            let results = `
+                Sum: ${sum} <br>
+                Division: ${division} <br>
+                Modulus: ${modulus} <br>
+                Power: ${power} <br>
+                Multiplication: ${multiplication}
+            `;
+
+            document.getElementById('results').innerHTML = results;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Pattern Methods</h1>
+   <!--   exec,test,search,match,replace--> 
+
+
+    
+</body>
+<script>
+    // it gives index when match , if you use global flag then it will provide all the indexes
+
+    //var pat=/hem/g;
+   // var str=prompt("Enter name ");
+    //var a=pat.exec(str);
+    //console.log(a);
+    //test
+    //if find true
+    //if not found false 
+    //let c=pat.test(str);
+    //console.log(c);
+    //if(c==true){
+       // alert("It lies");
+    //}
+    //else{
+        //alert("It doesnt lies");
+    //}
+
+
+    //search: if find return index value else -1
+    //var pat=/hem/i;
+   // var str=prompt("Enter name");
+    //let c=str.search(pat);
+    //if(c>=0){
+    // //   //alert("It lies at"+c);
+    //}
+   // else{
+        //alert("It doesnt lies")
+   // }
+
+
+
+   //match : it gives array of html collection if not match then return null
+
+  //var pat=/hem/i;
+   //var str=prompt("Enter name");
+    //let c=str.match(pat);
+    //if(c==null){
+    //alert("it doesnt match");
+    //}
+   // else{
+        //alert("It match "+c);
+  // }
+
+
+
+
+
+
+//    var pat=/^\+[0-9]{3}\-[0-9]{3}\-[0-9]{3}\-[0-9]{4}$/i;
+//    var str=prompt("Enter number");
+//     let c=str.match(pat);
+//     if(c==null){
+//     alert("it doesnt match");
+//     }
+//     else{
+//         alert("It match "+c);
+//    }
+
+
+
+//hemraj.221506@ncit.edu.np
+// var pat=/^[a-zA-Z0-9._%+-]+@ncit\.edu\.np$/
+// ;
+//    var str=prompt("Enter mail");
+//     let c=str.match(pat);
+//     if(c==null){
+//     alert("it doesnt match");
+//     }
+//     else{
+//         alert("It match "+c);
+//    }
+
+
+
+
+
+
+
+// Replace : It will replace all the matched elements
+
+
+// var pat=/is/gi;
+// var string=prompt("Enter any string");
+// let c=string.replace(pat,"god");
+// document.write(c);
+
+
+// write a js program that ask user for the phone number if phone number is valid then ask for email if both are valid then print.
+
+
+
+
+
+var phonePattern = /^977-\d{10}$/;
+var phoneNumber = prompt("Enter number");
+let phoneMatch = phoneNumber.match(phonePattern);
+
+if (phoneMatch == null) {
+    alert("Phone number doesn't match");
+} else {
+    var emailPattern = /^[a-zA-Z0-9._%+-]+@ncit\.edu\.np$/;
+    var email = prompt("Enter email");
+    let emailMatch = email.match(emailPattern);
+
+    if (emailMatch == null) {
+        alert("Email doesn't match");
+    } else {
+       document.write("Valid  email "+email+" and Valid  phone number " +phoneNumber);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</html>

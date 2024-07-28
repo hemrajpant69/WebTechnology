@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" onsubmit="return false;">
+        Num1: <input type="number" id="num1"> <br><br><br>
+        Num2: <input type="number" id="num2"> 
+        <input type="number" id="total" placeholder="Total" readonly onclick="cal">
+    </form>
+</body>
+
+<script>
+    function cal(){
+        let a = parseFloat(document.getElementById("num1").value);
+        let b = parseFloat(document.getElementById("num2").value);
+        let total = a + b;
+        document.getElementById("total").value = total;
+    }setInterval(cal);
+</script>
+</html>

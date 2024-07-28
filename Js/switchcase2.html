@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let color = prompt("Enter your color");
+    let bgColor;
+
+    switch(color.toLowerCase()) {
+        case "pink":
+            bgColor = "pink";
+            break;
+        case "red":
+            bgColor = "red";
+            break;
+        case "blue":
+            bgColor = "blue";
+            break;
+        case "green":
+            bgColor = "green";
+            break;
+        default:
+            bgColor = "pink"; // default color
+    }
+
+    document.write("<table border='1' bgcolor='" + bgColor + "'>");
+    document.write("<tr><th>Name</th><th>Age</th></tr>");
+    document.write("<tr><td>Hemraj Pant</td><td>20</td></tr>");
+    document.write("</table>");
+</script>
+</html>

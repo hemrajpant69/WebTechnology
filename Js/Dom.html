@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div id="container">
+
+
+
+    <h1 class="head" id="h">DOM Method</h1>
+    <p class="para" id="p">Hemraj Pant</p>
+    <img src="red.png" alt="" class="img" id="image">
+    <ul id="list">
+        <li class="list">Apple</li>
+        <li class="list">Ball</li>
+        <li class="list">Cat</li>
+        <li class="list">DOG</li>
+    </ul>
+    Name: <input type="text" class="name" placeholder="Enter your name" id="form">
+    <input type="submit" value="submit" onclick="Submit()" id="inp"> <br>
+    <br>
+    <br>
+    <input type="text" class="li" placeholder="Enter List Item here">
+    <input type="submit" value="Add" onclick="AddListItem()">
+
+    <h1>
+        This is Heading
+    </h1>
+
+
+   </div>
+
+</body>
+
+<script>
+
+    // Get Element by ID :
+    // let head=document.getElementById("head");
+    // console.log(head);
+    // //head.innerText="Ncit College";
+    // //head.textContent="Ncit College";
+    // //head.innerHTML="<i> NCIT College </i>"
+    // //head.style.backgroundColor="Red";
+    // //head.style.width="300px"
+    // head.style.cssText="background-color:red; color:white; width:200px;"
+    // let para=document.getElementById("para");
+    // para.innerText="Nepal";
+    // para.style.backgroundColor="green";
+
+    // document.body.style.backgroundColor="grey";
+    // let img=document.getElementById("img");
+    // img.src="yellow.png";
+
+    // function Submit(){
+    //     let name=document.getElementById("name");
+    //     para.innerText=name.value;
+      
+
+    // }
+
+
+    // Get Element by Class
+
+    
+
+    // function Submit() {
+    //         let name = document.getElementsByClassName("name")[0];
+    //         let para = document.getElementsByClassName("para")[0];
+    //         para.innerText = name.value;
+    //     }
+
+    //     // Change List Items
+
+    //     function AddListItem() {
+    //         let liInput = document.getElementsByClassName("li")[0];
+    //         let list = document.getElementById("list");
+    //         let newListItem = document.createElement("li");
+    //         newListItem.className = "list";
+    //         newListItem.innerText = liInput.value;
+    //         list.appendChild(newListItem);
+    //     }
+
+
+
+        // Get Element by tag Name
+
+        // let h=document.getElementsByTagName("h1");
+        // h1[0].style.backgroundColor="green";
+
+
+        // function Submit() {
+        //     let name = document.getElementsByTagName("input")[0];
+        //     let para = document.getElementsByTagName("p")[0];
+        //     para.innerText = name.value;
+        // }
+        
+
+
+
+
+
+
+
+
+
+        // querySelector and querySelectorAll
+
+
+        // let head=document.querySelector("h1"); by tag
+        // head.style.backgroundColor="red";
+
+        // let head=document.querySelector(".head");// By class
+        // head.style.backgroundColor="red";
+
+        // let head=document.querySelector("#h"); // Id
+        // head.style.backgroundColor="red";
+   
+        // let list=document.querySelectorAll(" li:nth-child(even)");
+        // for(i=0;i<list.length;i++){
+        //     list[i].style.color="orange";
+        // }
+
+
+// To remove Attribute 
+
+        // let image=document.getElementById("image");
+        // image.removeAttribute("src");
+
+
+
+        // To add new attribute
+       
+//  let form=document.getElementById("form");
+//  form.setAttribute("type","file");
+//  form.removeAttribute("type");
+ 
+
+
+
+
+
+
+
+
+// Has Attribute
+
+
+// let form=document.getElementById("form");
+// a=form.hasAttribute("type");
+// console.log(a);
+
+ 
+
+
+
+
+// append child
+//prepend
+//insertbefore
+
+
+
+let div = document.getElementById("container");
+              let newHead = document.createElement("h1");
+       newHead.innerText = "This is new added Head";
+//         // div.appendChild(newHead); for append
+//          div.prepend(newHead); for prepend
+
+//         let inp=document.getElementById("inp");
+//         div.insertBefore(newHead,inp);
+
+
+let list=document.getElementById("list");
+div.insertBefore(newHead,list);
+
+
+
+
+    
+
+</script>
+</html>

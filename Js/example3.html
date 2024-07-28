@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: red;
+        }
+        input{
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>
+        <u><i>Cafe</i></u>
+    </h1>
+    <table border="2">
+        <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Quantity</th>
+        </tr>
+        <tr>
+            <td>Blended Mochha</td>
+            <td>10000</td>
+            <td><input type="number" name="" id="bm"></td>
+        </tr>
+
+
+
+        <tr>
+            <td>Cappuccino</td>
+            <td>1500</td>
+            <td><input type="number" name="" id="cp"></td>
+        </tr>
+
+
+
+
+        <tr>
+            <td>Honey Latte</td>
+            <td>500</td>
+            <td><input type="number" name="" id="hl"></td>
+        </tr>
+
+
+        <tr>
+            <td>Msala tea</td>
+            <td>200</td>
+            <td><input type="number" name="" id="mt"></td>
+        </tr>
+
+
+
+    </table> <br>
+    <input type="text" name="" id="total" placeholder="Total Amount" onclick="cal()">
+    
+</body>
+
+
+
+
+<script>
+ function cal(){
+     let bmPrice = 10000;
+     let cpPrice = 1500;
+     let hlPrice = 500;
+     let mtPrice = 200;
+
+     let bmQty = document.getElementById('bm').value;
+     let cpQty = document.getElementById('cp').value;
+     let hlQty = document.getElementById('hl').value;
+     let mtQty = document.getElementById('mt').value;
+
+     let total = (bmPrice * bmQty) + (cpPrice * cpQty) + (hlPrice * hlQty) + (mtPrice * mtQty);
+
+     document.getElementById('total').value = total;
+ }setInterval(cal)
+
+</script>
+</html>
